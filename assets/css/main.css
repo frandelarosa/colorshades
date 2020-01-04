@@ -1,0 +1,62 @@
+.navbar > div.container > a {
+    color: #4D33DC;
+    font-size: 1.7rem;
+}
+
+.navbar-nav li.nav-item > a {
+    color: #C1BCD6;
+}
+
+/**/
+
+.color_selector {
+    /*background: red;*/
+}
+
+#color_generations {
+    /*background: orange;*/
+}
+
+#color_generations .col-3 {
+    padding: 2px 2px !important;
+}
+
+#select_color_form {
+    padding: 0px;
+}
+
+#select_color_form input {
+    margin: 10px auto;
+}
+
+#main {
+    /*background: red !important;*/
+}
+
+#footer {
+    background: gray;
+}
+
+.card-color-header {
+    height: 100px;
+}
+
+.card-body {
+    padding: 0.5rem !important;
+}
+
+.card-body p {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0.4rem 0.6rem !important
+}
+
+#shades_row, #tints_row {
+    margin-bottom: 1.8rem;
+}
+
+div.row.variation_title > h5 {
+    font-weight: 500;
+    color: #CCC4F5;
+    padding-bottom: 0.5em;
+}

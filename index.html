@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/lazy.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script type="text/javascript" src="./assets/js/tinycolor.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/colorshades.js"></script>
+  </head>
+  <body>
+    <!-- NavBar -->
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#lazy">ColorShades.io</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-1" aria-controls="navbarNavDropdown-1"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNavDropdown-1">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" id="main">
+
+        <div class="row"> 
+            <div class="col-3">
+
+                <div class="form-group" id="select_color_form">
+                    <h5>Main color</h5>
+                    <input type="text" class="form-control" id="selectedcolor" placeholder="Enter color hex value">
+                    <button type="button" class="btn btn-outline-primary" id="create_button" onclick="generateVariatons()">Create</button>
+                  </div>
+
+            </div>
+            <div class="col-6" id="color_generations">
+
+              <div class="row variation_title">
+                <h5>Shades</h5>
+              </div>
+              <div class="row" id="shades_row">
+              </div>
+
+              <div class="row variation_title">
+                <h5>Tints</h5>
+              </div>
+              <div class="row" id="tints_row">
+              </div>
+
+            </div> 
+            <div class="col-3">
+              ADS
+            </div>
+         </div> 
+
+         <!-- Footer -->
+         <div class="row" id="footer">
+
+            <div class="col-6">
+              Footer left
+            </div>
+
+            <div class="col-6">
+              Footer right
+            </div>
+
+         </div>
+
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./assets/vendor/jquery/jquery.min.js"></script>
+    <script src="./assets/vendor/popper/popper.min.js"></script>
+    <script src="./assets/vendor/bootstrap/bootstrap.min.js" ></script>
+
+    <!-- optional plugins -->
+    <script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
+
+    <!--   lazy javascript -->
+    <script src="./assets/js/lazy.js"></script>
+
+    <script type="text/javascript">
+      randomColor();
+    </script>
+
+  </body>
+</html>
