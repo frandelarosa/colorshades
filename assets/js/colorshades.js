@@ -1,3 +1,6 @@
+var initColor = null;
+var pickedColor = null;
+
 function addColorBox(type, validValue){
 
     var steps = 30;
@@ -80,12 +83,12 @@ function addColorBox(type, validValue){
 function generateVariatons(){
 
     // Get color from input text
-    var hexcolor = $("#selectedcolor").val();
+    //var hexcolor = $("#selectedcolor").val();
 
     deleteElementsFromRows();
 
-    addColorBox("shades", hexcolor);
-    addColorBox("tints", hexcolor);
+    addColorBox("shades", pickedColor);
+    addColorBox("tints", pickedColor);
 
 }
 
@@ -98,11 +101,32 @@ function deleteElementsFromRows(){
 
 function randomColor(){
 
-    var random = tinycolor.random().toString();
+    initColor = tinycolor.random().toString();
 
     deleteElementsFromRows();
     
-    addColorBox("shades", random);
-    addColorBox("tints", random);
+    addColorBox("shades", initColor);
+    addColorBox("tints", initColor);
+
+}
+
+function initColorPicker(){
+
+    var colorPicker = new iro.ColorPicker('#colorPicker',{
+        width: 200,
+        color: initColor
+    });
+
+    // https://iro.js.org/guide.html#color-picker-events
+colorPicker.on(["color:init", "color:change"], function(color){
+    pickedColor = color.rgbString;
+    // // Show the current color in different formats
+    // // Using the selected color: https://iro.js.org/guide.html#selected-color-api
+    // values.innerHTML = [
+    //   "hex: " + color.hexString,
+    //   "rgb: " + color.rgbString,
+    //   "hsl: " + color.hslString,
+    // ].join("<br>");
+  });
 
 }

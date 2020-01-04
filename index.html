@@ -10,12 +10,15 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <script type="text/javascript" src="./assets/js/tinycolor.js"></script>
     <script type="text/javascript" src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/iro.js"></script>
     <script type="text/javascript" src="./assets/js/colorshades.js"></script>
+
   </head>
   <body>
-    <!-- NavBar -->
+    
+    <!-- Top Bar -->
 
-    <nav class="navbar navbar-expand-lg">
+    <nav id="top_navbar" class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#lazy">ColorShades.io</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-1" aria-controls="navbarNavDropdown-1"
@@ -40,17 +43,26 @@
       </div>
     </nav>
 
+    <!-- Shades & Tints -->
+
     <div class="container" id="main">
 
         <div class="row"> 
             <div class="col-3">
+              <div id="colorPicker">
 
-                <div class="form-group" id="select_color_form">
-                    <h5>Main color</h5>
-                    <input type="text" class="form-control" id="selectedcolor" placeholder="Enter color hex value">
-                    <button type="button" class="btn btn-outline-primary" id="create_button" onclick="generateVariatons()">Create</button>
-                  </div>
-
+              </div>
+              <form>
+                <div class="form-group variation_title" id="select_color_form">
+             
+                  <button type="button" class="btn btn-outline-primary" id="create_button" onclick="generateVariatons()">Create</button>
+                  <!-- 
+                  <label for="selectedcolor">Enter a valid color</label>
+                  <input type="text" class="form-control" id="selectedcolor" placeholder="Enter color hex value">
+                  <button type="button" class="btn btn-outline-primary" id="create_button" onclick="generateVariatons()">Create</button>
+                  -->
+              </div>
+              </form>
             </div>
             <div class="col-6" id="color_generations">
 
@@ -68,24 +80,24 @@
 
             </div> 
             <div class="col-3">
-              ADS
+              
             </div>
          </div> 
 
-         <!-- Footer -->
-         <div class="row" id="footer">
-
-            <div class="col-6">
-              Footer left
-            </div>
-
-            <div class="col-6">
-              Footer right
-            </div>
-
-         </div>
-
     </div>
+
+    <!-- Footer -->
+    <nav id="bottom_navbar" class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="col-6">
+  
+        </div>
+
+        <div class="col-6">
+   
+        </div>
+      </div>
+    </nav>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./assets/vendor/jquery/jquery.min.js"></script>
@@ -99,7 +111,9 @@
     <script src="./assets/js/lazy.js"></script>
 
     <script type="text/javascript">
-      randomColor();
+          randomColor();
+      initColorPicker();
+
     </script>
 
   </body>
