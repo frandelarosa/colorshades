@@ -1,0 +1,21 @@
+Form:
+    ✔ Color picker @done(20-01-05 21:04)
+    ☐ Input color @started(20-01-05 21:05)
+    ☐ Input steps @started(20-01-05 21:05)
+    ☐ Create button @started(20-01-05 21:05)
+    ☐ On color entering, modify Color Picker
+
+Checks:
+    ☐ Input color is valid (RGB)
+    ☐ Input color is valid (HSL)
+    ☐ Input color is valid (HEX)
+
+Footer:
+    ☐ Add logo
+    ☐ Add navbar
+    ☐ Add Buy Me A Coffee button
+    ☐ Add PayPal button
+
+Google:
+    ☐ Add Analytics
+    ☐ Add AdSense

@@ -53,14 +53,16 @@
 
               </div>
               <form>
-                <div class="form-group variation_title" id="select_color_form">
-             
-                  <button type="button" class="btn btn-outline-primary" id="create_button" onclick="generateVariatons()">Create</button>
+                <div class="form-group variation_title" id="select_color_form">    
                   <!-- 
+                  <button type="button" class="btn btn-outline-primary" id="create_button" onclick="generateVariatons()">Create</button>
                   <label for="selectedcolor">Enter a valid color</label>
                   <input type="text" class="form-control" id="selectedcolor" placeholder="Enter color hex value">
-                  <button type="button" class="btn btn-outline-primary" id="create_button" onclick="generateVariatons()">Create</button>
+        
                   -->
+                  <input type="text" class="form-control" id="selectedcolor" placeholder="Enter color hex value">
+                  <input type="text" class="form-control" id="steps" placeholder="Number of variations">
+                  <button type="button" class="btn" id="create_button" onclick="generateVariatons()">Create</button>
               </div>
               </form>
             </div>
@@ -111,9 +113,8 @@
     <script src="./assets/js/lazy.js"></script>
 
     <script type="text/javascript">
-          randomColor();
+      randomColor();
       initColorPicker();
-
     </script>
 
   </body>

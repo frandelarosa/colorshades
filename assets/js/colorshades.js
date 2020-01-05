@@ -1,9 +1,14 @@
+/*
+    https://github.com/bgrins/TinyColor
+
+*/
+
 var initColor = null;
 var pickedColor = null;
+var steps = 30;
 
 function addColorBox(type, validValue){
 
-    var steps = 30;
     var percent = 100 / steps;
     var currentPercent = percent;
 
@@ -85,8 +90,19 @@ function generateVariatons(){
     // Get color from input text
     //var hexcolor = $("#selectedcolor").val();
 
+    // Get color
+    pickedColor = $("#selectedcolor").val();
+
+    // Get total variations
+    steps = $("#steps").val();
+
+    // Check if it's a valid value
+    steps = parseInt(steps);
+
+    // Delete rows
     deleteElementsFromRows();
 
+    // Create tint and shades
     addColorBox("shades", pickedColor);
     addColorBox("tints", pickedColor);
 
@@ -101,6 +117,10 @@ function deleteElementsFromRows(){
 
 function randomColor(){
 
+    // Add default steps value to input
+    $("#steps").val(steps);
+
+    // Create a random color
     initColor = tinycolor.random().toString();
 
     deleteElementsFromRows();
@@ -113,13 +133,14 @@ function randomColor(){
 function initColorPicker(){
 
     var colorPicker = new iro.ColorPicker('#colorPicker',{
-        width: 200,
+        width: 180,
         color: initColor
     });
 
     // https://iro.js.org/guide.html#color-picker-events
 colorPicker.on(["color:init", "color:change"], function(color){
-    pickedColor = color.rgbString;
+    pickedColor = color.hexString;
+    $("#selectedcolor").val(pickedColor);
     // // Show the current color in different formats
     // // Using the selected color: https://iro.js.org/guide.html#selected-color-api
     // values.innerHTML = [

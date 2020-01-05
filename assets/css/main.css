@@ -1,16 +1,22 @@
 /*
 
-    Main color: #B4BBBF;
+    Main color: #738E9F;
 
 */
 
+:root {
+    --cs-main-color: #738E9F;
+    --cs-input-color: #8F99A0;
+    --cs-h5-color: #91A6B4;
+}
+
 .navbar > div.container > a {
-    color: #454C51;
+    color: #465A66;
     font-size: 1.7rem;
 }
 
 .navbar-nav li.nav-item > a {
-    color: #8F99A0;
+    color: var(--cs-h5-color);
 }
 
 .color_selector {
@@ -25,21 +31,38 @@
     padding: 2px 2px !important;
 }
 
+/* Form */
+
 #select_color_form {
     padding: 0px;
 }
 
 #select_color_form input {
     margin: 10px auto;
+    width: 200px;
+    font-size: 0.85rem;
+    border: 1px solid var(--cs-input-color);
+    color: var(--cs-input-color);
 }
 
-#main {
-    /*background: red !important;*/
+#select_color_form button {
+    display: block;
+    width: 200px;
+    margin: 15px auto;
 }
 
-#footer {
-    background: gray;
+#create_button {
+    transition: all .4s ease;
+    border: 1px solid #8F99A0;
+    background: #8F99A0;
+    color: #FFFFFF;
 }
+
+#create_button:hover {
+    cursor: pointer;
+}
+
+/* Main */
 
 .card-color-header {
     height: 100px;
@@ -59,9 +82,17 @@
     margin-bottom: 1.8rem;
 }
 
+#main {
+    /*background: red !important;*/
+}
+
+#footer {
+    background: gray;
+}
+
 div.variation_title > h5 {
     font-weight: 500;
-    color: #8F99A0;
+    color: var(--cs-h5-color);
     padding-bottom: 0.5em;
 }
 
@@ -74,13 +105,12 @@ div.variation_title > h5 {
     background: #EBEDEE;
 }
 
-#create_button {
-    transition: all .4s ease;
-    border: 1px solid #8F99A0;
-    color: #8F99A0;
+/* Color picker */
+
+#colorPicker{
+    width: 255px;
 }
 
-#create_button:hover {
-    background: #8F99A0;
-    color: #FFFFFF;
+.iro__colorPicker {
+    margin: auto auto 21px auto !important;
 }
