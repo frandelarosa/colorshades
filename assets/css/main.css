@@ -6,21 +6,31 @@
 
 :root {
     --cs-main-color: #738E9F;
-    --cs-input-color: #8F99A0;
-    --cs-h5-color: #91A6B4;
+    --cs-input-color: #BAC7CF;
+    --cs-second-color: #91A6B4;
+    --cs-transition: all .4s ease;
+    --cs-footer-sections-height: 200px;
+}
+
+/* Top bar */
+
+#top_navbar {
+    background: #465A66;
+    margin-bottom: 2rem;
 }
 
 .navbar > div.container > a {
-    color: #465A66;
+    color: #FFFFFF;
     font-size: 1.7rem;
 }
 
 .navbar-nav li.nav-item > a {
-    color: var(--cs-h5-color);
+    color: var(--cs-second-color);
+    transition: var(--cs-transition);
 }
 
-.color_selector {
-    /*background: red;*/
+.navbar-nav li.nav-item > a:hover {
+    color: #FFFFFF;
 }
 
 #color_generations {
@@ -42,6 +52,10 @@
     width: 200px;
     font-size: 0.85rem;
     border: 1px solid var(--cs-input-color);
+    color: var(--cs-main-color);
+}
+
+#select_color_form input::placeholder {
     color: var(--cs-input-color);
 }
 
@@ -53,8 +67,8 @@
 
 #create_button {
     transition: all .4s ease;
-    border: 1px solid #8F99A0;
-    background: #8F99A0;
+    border: var(--cs-main-color);
+    background: var(--cs-main-color);
     color: #FFFFFF;
 }
 
@@ -73,7 +87,7 @@
 }
 
 .card-body p {
-    font-size: 12px;
+    font-size: 0.73rem;
     font-weight: 500;
     margin: 0.4rem 0.6rem !important
 }
@@ -86,24 +100,13 @@
     /*background: red !important;*/
 }
 
-#footer {
-    background: gray;
-}
-
 div.variation_title > h5 {
     font-weight: 500;
-    color: var(--cs-h5-color);
+    color: var(--cs-second-color);
     padding-bottom: 0.5em;
 }
 
-#top_navbar {
-    background: #EBEDEE;
-    margin-bottom: 2rem;
-}
 
-#bottom_navbar {
-    background: #EBEDEE;
-}
 
 /* Color picker */
 
@@ -113,4 +116,55 @@ div.variation_title > h5 {
 
 .iro__colorPicker {
     margin: auto auto 21px auto !important;
+}
+
+/* Footer */
+
+#bottom_navbar {
+    background: #465A66;
+    height: 400px;
+    display: block;
+    padding-top: 5rem;
+}
+
+#logo_description {
+    height: var(--cs-footer-sections-height);
+}
+
+#logo_description span {
+    color: #FFFFFF;
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+#logo_description p{
+    margin-top: 1.5rem;
+    color: var(--cs-second-color);
+}
+
+#footer_links {
+    height: var(--cs-footer-sections-height);
+}
+
+#footer_links ul {
+    text-align: right;
+    list-style: none;
+} 
+
+#footer_links li > a {
+    color: var(--cs-second-color);
+    padding-bottom: 0.5rem;
+    transition: var(--cs-transition);
+}
+
+#footer_links li > a:hover {
+    color: #FFFFFF;
+}
+
+#copyright {
+    color: var(--cs-second-color);
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    border-top: 1px solid var(--cs-second-color);
+    padding-top: 1rem;
 }

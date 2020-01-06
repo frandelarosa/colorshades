@@ -3,9 +3,12 @@
 
 */
 
+let stepsDefVal = 30;
+
 var initColor = null;
 var pickedColor = null;
-var steps = 30;
+var steps = stepsDefVal;
+var colorPicker = null;
 
 function addColorBox(type, validValue){
 
@@ -87,16 +90,32 @@ function addColorBox(type, validValue){
 
 function generateVariatons(){
 
-    // Get color from input text
-    //var hexcolor = $("#selectedcolor").val();
-
     // Get color
     pickedColor = $("#selectedcolor").val();
+
+    // Check if it's a valid color
+    var validColor = tinycolor(pickedColor);
+
+    if (!validColor.isValid()){
+
+        alert('Please enter a valid HEX, RGB or HSL value.');
+        return;
+
+    }
+
+    colorPicker.color.set(pickedColor);
 
     // Get total variations
     steps = $("#steps").val();
 
     // Check if it's a valid value
+    if (steps == null || steps.length == 0 || Number.isInteger(steps)){
+
+        steps = stepsDefVal;
+        $("#steps").val(steps);
+
+    }
+    
     steps = parseInt(steps);
 
     // Delete rows
@@ -132,15 +151,16 @@ function randomColor(){
 
 function initColorPicker(){
 
-    var colorPicker = new iro.ColorPicker('#colorPicker',{
+    colorPicker = new iro.ColorPicker('#colorPicker',{
         width: 180,
         color: initColor
     });
 
     // https://iro.js.org/guide.html#color-picker-events
-colorPicker.on(["color:init", "color:change"], function(color){
-    pickedColor = color.hexString;
-    $("#selectedcolor").val(pickedColor);
+    colorPicker.on(["color:init", "color:change"], function(color){
+
+        pickedColor = color.hexString;
+        $("#selectedcolor").val(pickedColor);
     // // Show the current color in different formats
     // // Using the selected color: https://iro.js.org/guide.html#selected-color-api
     // values.innerHTML = [

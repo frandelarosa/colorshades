@@ -36,7 +36,10 @@
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="https://twitter.com/d9fran">Twitter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:frandelarosadev@gmail.com">Contact</a>
             </li>
           </ul>
         </div>
@@ -50,17 +53,10 @@
         <div class="row"> 
             <div class="col-3">
               <div id="colorPicker">
-
               </div>
               <form>
                 <div class="form-group variation_title" id="select_color_form">    
-                  <!-- 
-                  <button type="button" class="btn btn-outline-primary" id="create_button" onclick="generateVariatons()">Create</button>
-                  <label for="selectedcolor">Enter a valid color</label>
-                  <input type="text" class="form-control" id="selectedcolor" placeholder="Enter color hex value">
-        
-                  -->
-                  <input type="text" class="form-control" id="selectedcolor" placeholder="Enter color hex value">
+                  <input type="text" class="form-control" id="selectedcolor" placeholder="HEX, RGB or HSL value">
                   <input type="text" class="form-control" id="steps" placeholder="Number of variations">
                   <button type="button" class="btn" id="create_button" onclick="generateVariatons()">Create</button>
               </div>
@@ -90,16 +86,42 @@
 
     <!-- Footer -->
     <nav id="bottom_navbar" class="navbar navbar-expand-lg">
-      <div class="container">
-        <div class="col-6">
-  
-        </div>
 
-        <div class="col-6">
-   
+      <div class="container" style="display: block;">
+        <div class="row">
+          <div class="col-6">
+            <div id="logo_description">
+              <span>ColorShades.io</span>
+              <p>Create beautiful shades and tints from a given color.<br>
+                Simply enter a valid value in the field and click on the button. You can pick a color from the to choose a more accurate value for your purpouse.
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-6">
+            <div id="footer_links">
+              <ul>
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="#">About</a></li>
+                <li><a class="nav-link" href="https://twitter.com/d9fran">Twitter</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="copyright">
+        <div class="row">
+          <div class="col-12">
+            <div>
+              Fran de la Rosa · Copyright © 2020
+            </div>
+          </div>
         </div>
       </div>
     </nav>
+
+
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./assets/vendor/jquery/jquery.min.js"></script>
