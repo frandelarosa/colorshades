@@ -1,9 +1,3 @@
-/*
-
-    Main color: #738E9F;
-
-*/
-
 :root {
     --cs-main-color: #738E9F;
     --cs-input-color: #BAC7CF;
@@ -35,7 +29,6 @@
 }
 
 #color_generations {
-    /*background: orange;*/
     min-height: 1200px;
 }
 
