@@ -1,4 +1,5 @@
 let stepsDefVal = 30;
+let maxSteps = 50;
 var pickedColor = null;
 var steps = stepsDefVal;
 var colorPicker = null;
@@ -97,17 +98,15 @@ function generateVariatons(){
     colorPicker.color.set(pickedColor);
 
     // Get total variations
-    steps = $("#steps").val();
+    steps = parseInt($("#steps").val())
 
     // Check if it's a valid value
-    if (steps == null || steps.length == 0 || Number.isInteger(steps)){
+    if (steps == null || steps.length == 0 || steps > maxSteps || !Number.isInteger(steps)){
 
         steps = stepsDefVal;
         $("#steps").val(steps);
 
     }
-    
-    steps = parseInt(steps);
 
     // Delete rows
     deleteElementsFromRows();
