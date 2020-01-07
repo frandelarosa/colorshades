@@ -10,7 +10,7 @@
     --cs-second-color: #91A6B4;
     --cs-titles-color: #546B7A;
     --cs-transition: all .4s ease;
-    --cs-footer-sections-height: 250px;
+    --cs-footer-sections-height: 350px;
 }
 
 /* Top bar */
@@ -151,9 +151,9 @@ div.variation_title > h5 {
 
 /* Footer */
 
-#bottom_navbar {
+#about {
     background: #465A66;
-    height: 400px;
+    height: 500px;
     display: block;
     padding-top: 4rem;
 }

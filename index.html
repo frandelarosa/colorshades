@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/lazy.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
     <script type="text/javascript" src="./assets/js/tinycolor.js"></script>
     <script type="text/javascript" src="./assets/js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="./assets/js/iro.js"></script>
     <script type="text/javascript" src="./assets/js/colorshades.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155657861-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-155657861-1');
+    </script>
   </head>
   <body>
     
@@ -33,7 +42,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#footer">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://twitter.com/d9fran">Twitter</a>
@@ -99,7 +108,7 @@
     </div>
 
     <!-- Footer -->
-    <nav id="bottom_navbar" class="navbar navbar-expand-lg">
+    <nav id="about" class="navbar navbar-expand-lg">
 
       <div class="container" style="display: block;">
         <div class="row">
@@ -110,6 +119,13 @@
                 Simply enter a valid value in the field and click on the button. You can pick a color the to choose a more accurate value for your purpouse.
                 <br><br>Feel free to reach me out writing an email or DM on Twitter! Also, any help to maintain this site buying me a coffee or a donation is welcome :)
               </p>
+             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_donations" />
+              <input type="hidden" name="business" value="7M9KUUMYDBHCW" />
+              <input type="hidden" name="currency_code" value="EUR" />
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+              <img alt="" border="0" src="https://www.paypal.com/en_ES/i/scr/pixel.gif" width="1" height="1" />
+              </form>              
             </div>
           </div>
   
@@ -117,9 +133,9 @@
             <div id="footer_links">
               <ul>
                 <li><a class="nav-link" href="#">Home</a></li>
-                <li><a class="nav-link" href="#">About</a></li>
+                <li><a class="nav-link" href="#footer">About</a></li>
                 <li><a class="nav-link" href="https://twitter.com/d9fran">Twitter</a></li>
-                <li><a class="nav-link" href="#">Contact</a></li>
+                <li><a class="nav-link" href="mailto:frandelarosadev@gmail.com">Contact</a></li>
               </ul>
             </div>
           </div>
