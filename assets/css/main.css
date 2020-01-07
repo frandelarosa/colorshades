@@ -8,8 +8,9 @@
     --cs-main-color: #738E9F;
     --cs-input-color: #BAC7CF;
     --cs-second-color: #91A6B4;
+    --cs-titles-color: #546B7A;
     --cs-transition: all .4s ease;
-    --cs-footer-sections-height: 200px;
+    --cs-footer-sections-height: 250px;
 }
 
 /* Top bar */
@@ -35,6 +36,7 @@
 
 #color_generations {
     /*background: orange;*/
+    min-height: 1200px;
 }
 
 #color_generations .col-3 {
@@ -61,6 +63,7 @@
 
 #select_color_form button {
     display: block;
+    height: 44px;
     width: 200px;
     margin: 15px auto;
 }
@@ -89,11 +92,40 @@
 .card-body p {
     font-size: 0.73rem;
     font-weight: 500;
-    margin: 0.4rem 0.6rem !important
+    margin: 0.4rem 0.52rem !important;
 }
 
 #shades_row, #tints_row {
-    margin-bottom: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+#combinations_row {
+    margin-bottom: 3rem;
+    min-height: 200px;
+}
+
+#color_combinations_list {
+    margin-left: 0;
+    list-style: none;
+    display: inline-flex;
+    padding: 0px 0.5rem 0px 0px;
+}
+
+#color_combinations_list li {
+    font-size: 0.9rem;
+    margin-right: 1rem;
+}
+
+#color_combinations_list a {
+    border-bottom: none;
+    color: var(--cs-second-color);
+    text-decoration: none;
+    transition: var(--cs-transition);
+}
+
+#color_combinations_list a:hover {
+    color: #738D9F;
+    cursor: pointer;
 }
 
 #main {
@@ -101,12 +133,11 @@
 }
 
 div.variation_title > h5 {
+    font-size: 1.65rem !important;
     font-weight: 500;
-    color: var(--cs-second-color);
+    color: var(--cs-titles-color);
     padding-bottom: 0.5em;
 }
-
-
 
 /* Color picker */
 
@@ -124,7 +155,7 @@ div.variation_title > h5 {
     background: #465A66;
     height: 400px;
     display: block;
-    padding-top: 5rem;
+    padding-top: 4rem;
 }
 
 #logo_description {

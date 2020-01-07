@@ -76,6 +76,20 @@
               <div class="row" id="tints_row">
               </div>
 
+              <div class="row variation_title">
+                <h5>Combinations</h5>
+              </div>
+              <div class="row">
+                <ul id="color_combinations_list">
+                  <li><a onclick="addCombinations(1);">analogous</a></li>
+                  <li><a onclick="addCombinations(3);">complement</a></li>
+                  <li><a onclick="addCombinations(4);">triad</a></li>
+                  <li><a onclick="addCombinations(5);">tetrad</a></li>
+                </ul>
+              </div>
+              <div class="row" id="combinations_row">
+              </div>
+
             </div> 
             <div class="col-3">
               
@@ -93,7 +107,8 @@
             <div id="logo_description">
               <span>ColorShades.io</span>
               <p>Create beautiful shades and tints from a given color.<br>
-                Simply enter a valid value in the field and click on the button. You can pick a color from the to choose a more accurate value for your purpouse.
+                Simply enter a valid value in the field and click on the button. You can pick a color the to choose a more accurate value for your purpouse.
+                <br><br>Feel free to reach me out writing an email or DM on Twitter! Also, any help to maintain this site buying me a coffee or a donation is welcome :)
               </p>
             </div>
           </div>
@@ -121,8 +136,6 @@
       </div>
     </nav>
 
-
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./assets/vendor/jquery/jquery.min.js"></script>
     <script src="./assets/vendor/popper/popper.min.js"></script>
@@ -131,7 +144,7 @@
     <!-- optional plugins -->
     <script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
 
-    <!--   lazy javascript -->
+    <!--  lazy javascript -->
     <script src="./assets/js/lazy.js"></script>
 
     <script type="text/javascript">
