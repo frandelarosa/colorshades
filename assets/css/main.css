@@ -1,3 +1,12 @@
+/*
+ * Filename: main.css
+ * Path: assets/css
+ * Created Date: Monday, December 30th 2019, 3:39:18 pm
+ * Author: Fran
+ * 
+ * Main CSS file of this project.
+ */
+
 :root {
     --cs-main-color: #738E9F;
     --cs-input-color: #BAC7CF;
@@ -43,11 +52,11 @@
 }
 
 #select_color_form input {
-    margin: 10px auto;
-    width: 200px;
-    font-size: 0.85rem;
     border: 1px solid var(--cs-input-color);
     color: var(--cs-main-color);
+    font-size: 0.85rem;
+    margin: 10px auto;
+    width: 200px;
 }
 
 #select_color_form input::placeholder {
@@ -57,15 +66,15 @@
 #select_color_form button {
     display: block;
     height: 44px;
-    width: 200px;
     margin: 15px auto;
+    width: 200px;
 }
 
 #create_button {
-    transition: all .4s ease;
-    border: var(--cs-main-color);
     background: var(--cs-main-color);
+    border: var(--cs-main-color);
     color: #FFFFFF;
+    transition: all .4s ease;
 }
 
 #create_button:hover {
@@ -98,8 +107,8 @@
 }
 
 #color_combinations_list {
-    margin-left: 0;
     list-style: none;
+    margin-left: 0;
     display: inline-flex;
     padding: 0px 0.5rem 0px 0px;
 }
@@ -121,14 +130,10 @@
     cursor: pointer;
 }
 
-#main {
-    /*background: red !important;*/
-}
-
 div.variation_title > h5 {
+    color: var(--cs-titles-color);
     font-size: 1.65rem !important;
     font-weight: 500;
-    color: var(--cs-titles-color);
     padding-bottom: 0.5em;
 }
 
@@ -146,9 +151,13 @@ div.variation_title > h5 {
 
 #about {
     background: #465A66;
-    height: 500px;
     display: block;
+    height: 420px;
     padding-top: 4rem;
+}
+
+#about_description {
+    height: 250px;
 }
 
 #logo_description {
@@ -162,8 +171,8 @@ div.variation_title > h5 {
 }
 
 #logo_description p{
-    margin-top: 1.5rem;
     color: var(--cs-second-color);
+    margin-top: 1.5rem;
 }
 
 #footer_links {
@@ -171,8 +180,8 @@ div.variation_title > h5 {
 }
 
 #footer_links ul {
-    text-align: right;
     list-style: none;
+    text-align: right;
 } 
 
 #footer_links li > a {
@@ -186,9 +195,14 @@ div.variation_title > h5 {
 }
 
 #copyright {
+    border-top: 1px solid var(--cs-second-color);
     color: var(--cs-second-color);
     font-size: 0.9rem;
     letter-spacing: 0.1rem;
-    border-top: 1px solid var(--cs-second-color);
+    margin-left: 0px;
     padding-top: 1rem;
+}
+
+#about_name {
+    margin-left: -30px;
 }
