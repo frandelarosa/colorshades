@@ -1,5 +1,9 @@
 # Colorshades.io
 
+<p align="center">
+  <img src="assets/img/colorshades_128.png" alt="ColorSahdes.io logo"/>
+</p>
+
 Create beautiful shades and tints from a given color. Simply enter a valid value in the field and click on the button. You can pick a color to choose a more accurate value for your purpose.
 
 [Colorshades.io](https://www.colorshades.io)
