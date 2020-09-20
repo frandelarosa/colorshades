@@ -31,4 +31,4 @@ External dependences I've used in this project:
 
 ## Contact ##
 
-Feel free to [reach me out](mailto:frandelarosa@gmail.com) writing an email or [DM](https://twitter.com/d9fran) on Twitter! :)
+Feel free to [reach me out](mailto:frandelarosadev@gmail.com) writing an email or [DM](https://twitter.com/frandelarosadev) on Twitter! :)
