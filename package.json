@@ -1,0 +1,23 @@
+{
+  "name": "colorshades",
+  "version": "1.0.0",
+  "description": "Create beautiful shades and gits from a given color.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frandelarosa/colorshades.git"
+  },
+  "author": "Fran de la Rosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frandelarosa/colorshades/issues"
+  },
+  "homepage": "https://github.com/frandelarosa/colorshades#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
