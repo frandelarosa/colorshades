@@ -91,6 +91,8 @@ function addColorBox(type, validValue){
                          <p>${valueHSL}</p>
                          <p>${valueRGB}</p>`
 
+
+        $(box_card).attr("data-clipboard-text", valueHex);
         $(box_body).html(valuesStr);
     
         // Add layers
@@ -216,6 +218,7 @@ function addCombinations(type){
                          <p>${valueHSL}</p>
                          <p>${valueRGB}</p>`
 
+        $(box_card).attr("data-clipboard-text", valueHex);
         $(box_body).html(valuesStr)
 
         // Add color to header

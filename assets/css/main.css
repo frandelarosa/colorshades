@@ -8,10 +8,11 @@
  */
 
 :root {
-    --cs-main-color: #738E9F;
+    --cs-main-color: #7510F7;
     --cs-input-color: #BAC7CF;
-    --cs-second-color: #91A6B4;
-    --cs-titles-color: #546B7A;
+    --cs-second-color: #F0E4FA;
+    --cs-titles-color: #1f1f1f;
+    --cs-combinations-color: #AE73FA;
     --cs-transition: all .4s ease;
     --cs-footer-sections-height: 350px;
 }
@@ -19,7 +20,7 @@
 /* Top bar */
 
 #top_navbar {
-    background: #465A66;
+    background: #7510F7;
     margin-bottom: 2rem;
 }
 
@@ -83,6 +84,10 @@
 
 /* Main */
 
+.card:hover {
+    cursor: pointer;
+}
+
 .card-color-header {
     height: 100px;
 }
@@ -120,13 +125,13 @@
 
 #color_combinations_list a {
     border-bottom: none;
-    color: var(--cs-second-color);
+    color: #adb5bd;
     text-decoration: none;
     transition: var(--cs-transition);
 }
 
 #color_combinations_list a:hover {
-    color: #738D9F;
+    color: #495057;
     cursor: pointer;
 }
 
@@ -150,7 +155,7 @@ div.variation_title > h5 {
 /* Footer */
 
 #about {
-    background: #465A66;
+    background: #7510F7;
     display: block;
     height: 420px;
     padding-top: 4rem;
