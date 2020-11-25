@@ -18,7 +18,6 @@
 }
 
 /* Top bar */
-
 #top_navbar {
     background: #7510F7;
     margin-bottom: 2rem;
@@ -211,3 +210,29 @@ div.variation_title > h5 {
 #about_name {
     margin-left: -30px;
 }
+
+/* Responsive fixes */
+@media screen and (orientation: portrait){
+    
+    #shades_row, #tints_row, #combinations_row {
+        padding: 10px;
+    }
+    
+    #color_generations {
+        margin-top: 50px;
+    }
+    
+    div.variation_title {
+        padding-left: 10px;
+    }
+    
+    ul#color_combinations_list {
+        padding-left: 10px;
+    }
+    
+    #logo_description > p {
+        display: none;
+    }
+
+}
+
