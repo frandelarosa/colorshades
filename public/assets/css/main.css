@@ -45,6 +45,16 @@
     padding: 2px 2px !important;
 }
 
+/* ColorPicker */
+
+#colorPickerContainer {
+    
+    max-width: 282px;
+    margin-left: auto;
+    margin-right: auto; 
+    
+}
+
 /* Form */
 
 #select_color_form {
@@ -214,12 +224,21 @@ div.variation_title > h5 {
 /* Responsive fixes */
 @media screen and (orientation: portrait){
     
+    #colorPickerContainer {
+        
+        max-width: 282px;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 10px;
+        
+    }
+    
     #shades_row, #tints_row, #combinations_row {
         padding: 10px;
     }
     
     #color_generations {
-        margin-top: 50px;
+        margin-top: 30px;
     }
     
     div.variation_title {
